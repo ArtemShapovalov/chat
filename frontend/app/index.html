@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Chat</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/styles/main.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">Chat App</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div ng-view></div>
+    </div>
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+	<script src="bower_components/requirejs/require.js" data-main="/scripts/main"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

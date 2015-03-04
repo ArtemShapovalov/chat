@@ -1,0 +1,33 @@
+.chat .messages{
+    height: 205px;
+    border: 1px solid #d4d4d4;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+.chat .messages .time {
+    font-size: 11px;
+    color: #777;
+}
+
+.chat .messages .owner{
+    color: #B22222;
+}
+.chat .messages .text{
+
+}
+
+.chat .message{
+    width: 70%;
+}
+
+.chat .panel{
+    margin-top: 8px;
+}
+
+#message_text{
+    width: 60%;
+    display: inline-block;
+    margin-left: 8px;
+}

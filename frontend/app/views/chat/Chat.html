@@ -1,0 +1,37 @@
+<div class="chat" ng-controller="ChatController">
+
+    <div class="main row">
+        <div class="col-md-10">
+            <div class="members panel panel-default">
+                <div class="panel-heading">Room: {{chat.room}}</div>
+                <div class="panel-body">
+
+                    <div id="messages" class="messages" scroll-glue>
+                        <div ng-repeat="message in chat.messages">
+                            <span class="time">{{chat.dateFormat(message.time)}}</span> <span class="owner">{{message.owner}}</span> <span class="text">{{message.text}}</span>
+                        </div>
+                    </div>
+                    <span class="nick">{{chat.name}}</span>
+                    <div class="input-group">
+                        <input type="text" class="form-control" message-text ng-model="chat.messageText">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" send-message></button>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="members panel panel-default">
+                <div class="panel-heading">Members</div>
+                <div class="panel-body">
+                    <div ng-repeat="member in chat.members">
+                        <div>{{member}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
