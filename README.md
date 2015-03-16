@@ -33,15 +33,21 @@ backend
     runtime/             contains files generated during runtime
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
-frontend
+api
     assets/              contains application assets such as JavaScript and CSS
-    config/              contains frontend configurations
+    config/              contains backend configurations
     controllers/         contains Web controller classes
-    models/              contains frontend-specific model classes
+    models/              contains backend-specific model classes
     runtime/             contains files generated during runtime
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
-    widgets/             contains frontend widgets
+frontend
+    node_modules         contains dependent 3rd-party node modules
+    bower_components     contains dependent 3rd-party bower components
+    test                 contains test files
+    app                  contains frontend application
+node
+    node_modules         contains dependent 3rd-party node modules
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 tests                    contains various tests for the advanced application
@@ -58,14 +64,6 @@ The minimum requirement by this application template that your Web server suppor
 INSTALLATION
 ------------
 
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `advanced` that is directly under the Web root.
-
-Then follow the instructions given in "GETTING STARTED".
-
-
 ### Install via Composer
 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
@@ -75,7 +73,7 @@ You can then install the application using the following command:
 
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-advanced advanced
+git clone git@bitbucket.org:develop-ua/chat.git
 ~~~
 
 
